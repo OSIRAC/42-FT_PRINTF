@@ -56,5 +56,6 @@ int	ft_printf(const char *a, ...)
 			count += ft_print_char(a[i]);
 		i++;
 	}
+	va_end(args);
 	return (count);
 }
